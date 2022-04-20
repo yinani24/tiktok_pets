@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="rough1.css" rel="stylesheet" />
+    <title>JS 1</title>
+  </head>
+  <body>
+    <div class = "grp1">
+      <p id = "someHeading">TikTok Pets</p>
+      <button class = "rightTop" id = "Cont">My Videos</button>
+      <div class = "center">
+        <p id = "mH">Submit a video:</p>
+        <!-- <br /> -->
+        <div id = "ele">
+          <p id = "askText">Username:</p>
+          <input type="text" class="textInput" placeholder= "awesometiktokuser123" />
+          <!-- <button id="textchanger">Enter</button> -->
+          <p id = "askText">Tiktok URL:</p>
+          <input type="text" class="textInput" placeholder= "https://tiktok.com/12345" />
+          <p id = "askText">Video nickname:</p>
+          <input type="text" class="textInput" id = "rough" placeholder= "Bob the supercat" />
+        </div>
+      </div>
+      <div id = "Od">
+        <button class = "Cont" id = "continue">Continue</button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("continue").onclick = function () {
+        var textEntered = "";
+        textEntered = document.getElementById("rough").value;
+        console.log(textEntered);
+      }
+    </script>
+  </body>
+</html>
