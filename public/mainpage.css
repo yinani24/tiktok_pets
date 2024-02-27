@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+.grp1{
+  /* text-align: center; */
+}
+#someHeading{
+  text-align: center;
+  font-family: 'Boogaloo';
+  font-size: 48px;
+  margin-top: 40px;
+}
+#mH{
+  /* margin: auto; */
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+.rightTop{
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 90px;  
+  margin-top: -60px;
+/*   margin-top: -100px;  */
+  float: right;
+  padding: 12px;
+  padding-right: 23px; 
+  padding-left: 23px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(238, 29, 82, 0.9);
+  color: white;
+}
+.center{
+  /* background-color: rgba(238, 29, 82, 0.9), rgb(105, 201, 208);
+  background-blend-mode: screen; */
+   background-image: linear-gradient(to left top, rgb(105, 201, 208), rgba(238, 29, 82, 0.9)); 
+  width: 370px;
+  margin: auto;
+  padding: 50px;
+  padding-top: 30px;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  margin-top: 70px;
+}
+#ele{
+  margin-left: -15px;
+  margin-top: 30px;
+}
+#askText{
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  /* margin: 0; */
+  /* margin-left: -100px; */
+}
+.textInput{
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+input[type = "text"]::placeholder{
+  padding: 15px;
+  font-size: 16px;
+}
+.Cont{
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  /* margin-right: 60px; */
+  margin-top: 50px;
+  padding: 12px;
+  padding-right: 23px;
+  padding-left: 23px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(238, 29, 82, 0.9);
+  color: white;
+}
+#Od{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 900px){
+  #heading_title{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+  }
+  
+  #ele{
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  #someHeading{
+    text-align: left;
+    font-family: 'Boogaloo';
+    font-size: 48px;
+    margin-left: 50px;
+/*     margin-top: 40px; */
+  }
+  .rightTop{
+    font-family: 'Inter';
+    font-size: 20px;
+    margin-right: 50px;   
+     margin-top: 50px;  
+  /*   margin-top: -100px;  */
+/*     float: right; */
+    
+    padding: 12px;
+    padding-right: 23px; 
+    padding-left: 23px;
+    
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(238, 29, 82, 0.9);
+    color: white;
+  }
+  .center{
+    /* background-color: rgba(238, 29, 82, 0.9), rgb(105, 201, 208);
+    background-blend-mode: screen; */
+    background-image: linear-gradient(to left top, rgb(105, 201, 208), rgba(238, 29, 82, 0.9));
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+    padding-top: 30px;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 480px){
+  #someHeading{
+    font-size: 32px;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+  
+  .rightTop{
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-right: 10px;   
+    margin-top: 50px;
+  /*   margin-top: -100px;  */
+/*     float: right; */
+    padding: 12px;
+    padding-right: 17px; 
+    padding-left: 17px;
+    border-radius: 14px;
+    border: none;
+    background-color: rgba(238, 29, 82, 0.9);
+    color: white;
+  }
+  .center{
+    /* background-color: rgba(238, 29, 82, 0.9), rgb(105, 201, 208);
+    background-blend-mode: screen; */
+    background-image: linear-gradient(to left top, rgb(105, 201, 208), rgba(238, 29, 82, 0.9));
+    width: 290px;
+    margin: auto;
+    padding: 35px;
+    padding-top: 30px;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    margin-top: 50px;
+  }
+  .textInput{
+    width: 310px;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+  }
+  #ele{
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+  #mH{
+    /* margin: auto; */
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter';
+  }
+  .Cont{
+    font-family: 'Inter';
+    font-size: 16px;
+    /* margin-right: 60px; */
+    margin-top: 60px;
+    padding: 12px;
+    padding-right: 23px;
+    padding-left: 23px;
+    border-radius: 14px;
+    border: none;
+    background-color: rgba(238, 29, 82, 0.9);
+    color: white;
+  }
+}

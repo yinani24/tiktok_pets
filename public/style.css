@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --cyan : rgb(105, 201, 208);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    /*width: 100vh;
+    height: 100vh;
+    margin: 0; */
+}
+
+/* header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    /* width: 100%; */
+    /* margin-top: 50px;
+}   */
+
+div.headerRight {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.headerLeft {
+  width: 18%;
+}
+
+div.headerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header.redirect {
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+    font-weight: 400;
+}
+
+/* Slightly altered default h2 tag. */
+/* h2 {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+} */
+
+span {
+    color: var(--magenta);
+}
+
+#continueButton {
+    /* border-radius: 10px; */
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 12px;
+    padding-right: 23px;
+    padding-left: 23px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    /* font-weight: 500; */
+    font-family: 'Inter', sans-serif;
+    /* text-align: center; */
+    /* color: whitesmoke; */
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    /* border: none; */
+    margin: 10px;
+}
+
+#aligning{
+  margin-top: 50px; 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+#right{
+  width: 18%;
+}
+
+#left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 18%; 
+}
+
+#center{
+  width: 50%;
+/*   align-self: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#previewNickName{
+    font-family: 'Inter';
+    color: white;
+    font-size: 24px;
+    margin: 0px;
+}
+
+#reload{
+    background-color: transparent;
+    align-self: center;
+    border: none;
+    color: var(--magenta);
+  transform: scaleX(-1) rotate(300deg);
+}
+
+/* #continueButton{
+    margin-left: 50px;
+}  */
+
+#continueButton:hover {
+    background-color: var(--cyan);
+}
+
+/* #reload:hover{
+    background-color: var(--cyan);
+} */
+
+div.video {
+/*     width: 400px; */
+/*     margin-top: 20px; */
+/*     height: 700px; */
+    border: none;
+    padding: 0px 12px 18px 12px;
+    border-radius: 12px;
+    background-color: var(--magenta);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*   margin-bottom: 20px; */
+}
+
+/* #tiktokDiv{
+  height: 10px;
+} */
+
+input {
+    font-weight: 400;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid transparent; /* Adding transparent border to avoid weird movement whenever border is added. */
+}
+
+input[type=text]:focus {
+    border: 1px solid turquoise;
+}
+
+/* label {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.formfields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0; */
+}
+
+blockquote {
+/*   border-style: solid;
+  border-color:  var(--ttmagenta); */
+/*   border-width: 2px; */
+  border-radius: 10px;
+/*   background-color:var(--ttmagenta); */
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 390px;
+    width: 390px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-70deg, var(--cyan), 60%, var(--magenta));
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+@media screen and (max-width:900px) {
+
+  div.video{
+    margin-top: 50px;  
+  }
+  
+  #aligning{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  #left{
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+  div.video{
+    margin-top: 30px;
+  }
+  header {
+    justify-content: space-around;
+  }
+
+  div.headerRight {
+  width: 30%;
+  justify-content: center;
+}
+
+div.headerLeft {
+  display: none;
+}
+
+div.headerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+    #app {
+        width: 320px;
+    }
+}
+/*
+give each button an id
+remove fa heart & far
+add fas
+
+*/

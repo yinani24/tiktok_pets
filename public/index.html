@@ -1,0 +1,107 @@
+<!doctype HTML> 
+
+<HTML> 
+
+<HEAD>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" 
+        href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css" />
+<!--     <link rel="stylesheet" type="text/css" href="new.css" /> --> 
+<!--   I changed this above line -->
+  <link rel="stylesheet" type="text/css" href="my-videos-style.css" />
+  <script defer src="my-videos.js"></script>
+    <title>My Videos</title>
+</HEAD>
+
+<body> 
+  <header>
+    <div class="headerLeft"></div>
+    <div class="headerCenter">
+      <h1 class="main-h1">My Videos</h1>
+    </div>
+    <div class="headerRight">
+      <button id="addNewButton" class = "MainButtons" onclick="ClickButton()">Add New</button>
+    </div>
+  </header>
+
+  
+  <div class="prompt"> Please upload 8 videos to continue: 
+  </div>
+  <!-- will be changed by the javascript to make it include the box for each video -->
+  
+  <div class="videoList">
+        <div class = "group1">
+          <div id = "Ele1" class = "com1">
+            <div id = "item1" class = "Left_Buttons">
+              <p id= "Line1" class = "lines"></p>
+            </div>
+            <button id = "i1_button" class = "CButton">X</button>
+          </div>
+          <div id = "Ele2" class = "com2">
+            <div id = "item2" class = "Right_Buttons">
+              <p id= "Line2" class = "lines"></p>
+            </div>
+            <button id = "i2_button" class = "CButton">X</button>
+          </div>
+        </div>
+        <div class = "group2">
+          <div id = "Ele3" class = "com1">
+            <div id = "item3" class = "Left_Buttons">
+              <p id= "Line3" class = "lines"></p>
+            </div>
+            <button id = "i3_button" class = "CButton">X</button>
+          </div>
+          <div id = "Ele4" class = "com2">
+            <div id = "item4" class = "Right_Buttons">
+            <p id= "Line4" class = "lines"></p>
+            </div>
+            <button id = "i4_button" class = "CButton">X</button>
+          </div>
+        </div>
+        <div class = "group3">
+          <div id = "Ele5" class = "com1">
+            <div id = "item5" class = "Left_Buttons">
+              <p id= "Line5" class = "lines"></p>
+            </div>
+            <button id = "i5_button" class = "CButton">X</button>
+          </div>
+          <div id = "Ele6" class = "com2">
+            <div id = "item6" class = "Right_Buttons">
+            <p id= "Line6" class = "lines"></p>
+            </div>
+            <button id = "i6_button" class = "CButton">X</button>
+          </div>
+        </div>
+        <div class = "group4">
+          <div id = "Ele7" class = "com1">
+            <div id = "item7" class = "Left_Buttons">
+              <p id= "Line7" class = "lines"></p>
+            </div>
+            <button id = "i7_button" class = "CButton">X</button>
+          </div>
+          <div id = "Ele8" class = "com2">
+            <div id = "item8" class = "Right_Buttons">
+            <p id= "Line8" class = "lines"></p>
+            </div>
+            <button id = "i8_button" class = "CButton">X</button>
+          </div>
+        </div>
+        
+        <!-- <div id="nickList">testing bruh</div> -->
+  </div>
+
+  <button id="playGame" class = "MainButtons">Play Game</button>
+
+<!--   <script>
+  document.getElementById("Line1").textContent = "HI";
+    //document.getElementById("Line1").textContent = "HI";
+  </script>  -->
+  
+  <!-- NEVER put any javascript code in the HTML file.-->
+</body>
+
+</HTML>
+
+
+

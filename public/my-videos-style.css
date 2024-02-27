@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --magenta : rgba(238, 29, 82, 0.8);
+  --cyan : rgb(105, 201, 208);
+}
+
+#addNewButton{
+    margin-right: 60px;
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}  
+
+div.headerRight {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.headerLeft {
+  width: 18%;
+}
+
+div.headerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header.redirect {
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+}
+
+/* Slightly altered default h2 tag. */
+h2 {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Added by yash */
+.prompt{
+  font-family: 'Inter';
+  font-size: 24px;
+  fond-weight: 700;
+  margin-top: -100px;
+}
+
+span {
+    color: var(--magenta);
+}
+
+.MainButtons {
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    margin: 10px;
+}
+
+/* button:hover {
+    background-color: var(--cyan);
+} */
+
+#addNewButton:hover {
+    background-color: var(--cyan);
+}
+
+#playGame:hover {
+    background-color: var(--cyan);
+}
+
+
+input {
+    font-weight: 400;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid transparent; /* Adding transparent border to avoid weird movement whenever border is added. */
+}
+
+input[type=text]:focus {
+    border: 1px solid turquoise;
+}
+
+label {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.formfields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#item1{
+    
+    width: 350px;
+/*     border: 1px solid;  */
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}  
+
+#Ele1{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+#item2{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+#Ele2{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+#item3{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+
+#Ele3{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+#item4{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+#Ele4{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+#item5{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+#Ele5{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+#item6{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+#Ele6{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+#item7{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+#Ele7{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+#item8{
+    width: 350px;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+#Ele8{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+.CButton{
+    background-color: white;
+    color: rgba(238, 29, 82, 0.9);
+    font-family: 'Boogaloo';
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+.group1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.group2{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+
+.group3{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.group4{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.videoList{
+  width: 80%;
+  height: 30%;
+}
+
+
+.com1 {
+    display: flex;
+    flex-direction: column;
+}
+.com2 {
+    display: flex;
+    flex-direction: column;
+}
+.lines {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 20px;
+  padding-top: 7px;
+  font-family: 'Inter';
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 390px;
+    width: 390px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-70deg, var(--cyan), 60%, var(--magenta));
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+@media screen and (max-width:900px) {
+  #addNewButton{
+    margin-right: 15px;
+} 
+  #playGame{
+    margin-top: 100px;
+  }
+  .videoList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -50px;    
+  }
+  .prompt{
+/*     margin-top: 0px; */
+/*      top: -120px;   */
+  }
+  
+
+  .group1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .group2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .group3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .group4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  
+  #item8{
+    margin-left: 0px;
+  } 
+
+  #item6{
+    margin-left: 0px;
+  } 
+
+  #item4{
+    margin-left: 0px;
+  } 
+
+  #item2{
+    margin-left: 0px;
+  } 
+
+  .CButton{
+    font-size: 60px;
+  }
+/* above part added by yash */ 
+    h2 {
+        font-size: 20px;
+    }
+
+  header {
+    justify-content: space-around;
+  }
+
+div.headerRight {
+  width: 30%;
+  justify-content: center;
+}
+
+div.headerLeft {
+  display: none;
+}
+
+div.headerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+    #app {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+  h1{
+    font-size: 32px;
+  }
+
+  .prompt{
+    font-size: 18px;
+  }
+
+  .CButton{
+    font-size: 44px;
+  }
+
+  .lines{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+#heading{
+    text-align: center;
+    font-family: 'Boogaloo';
+    font-size: 48px;
+}
+
+#main_post_1{
+    text-align: center;
+    font-family: 'Boogaloo';
+    font-size: 48px;
+    margin-top: 250px;
+}
+
+#alignment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main_post_1_colored{
+    color: rgba(238,29,82,0.9);
+}
+
+/* #main_post_2{
+    text-align: center;
+    font-family: 'Boogaloo';
+    font-size: 48px;
+    margin-top: 150px;
+} */
+
+#button_post{
+    font-family: 'Inter';
+    font-size: 20px;
+    background-color: rgba(238,29,82,0.9);
+    border-radius: 8px;
+    padding: 12px;
+    padding-right: 23px;
+    padding-left: 23px;
+    border: none;
+    color: white;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media(max-width: 480px){
+  #heading{
+    font-size: 32px;
+  }
+
+  #main_post_1{
+    font-size: 32px;
+  }
+
+  #button_post{
+    font-size: 16px;
+  }
+} 
+
+@media(max-width: 900px){
+  #main_post_1{
+    width: 60%;
+  }  
+}
