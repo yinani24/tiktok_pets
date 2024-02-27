@@ -14,10 +14,7 @@ let continueButton = document.getElementById("continue")
 let myVideosButton = document.getElementById("myVideos")
 
 
-// the function to excute once the server responds.
-function requestSuccess(data){
-  console.log(data);
-}
+
 
 
 // function to send POST request
@@ -33,7 +30,6 @@ async function sendPostRequest(url,data) {
   if (response.ok) {
     let data = await response.text();
     // Do the things you have to do if the server returns successfully.
-    requestSuccess(data);
     return data;
   } else {
     throw Error(response.status);
@@ -46,10 +42,20 @@ continueButton.addEventListener("click",
           let usernameText = username.value;
           let tiktokUrlText = tiktokUrl.value;
           let videoNameText = videoName.value;
-          let txtData = `{"username": ${usernameText}, "tiktokUrl": ${tiktokUrlText}, "videoName": ${videoNameText}}`
-          
-          sendPostRequest("/videoData", txtData);
+          let txtData = `{"username": ${usernameText}, "tiktokUrl": ${tiktokUrlText}, "videoName": ${videoNameText}}`;
+          sendPostRequest("/videoData", txtData).then(function(data) {
+            sessionStorage.setItem("videoName", videoNameText);
+            window.location = "new.html";  })
+          .catch(function(error) {
+            console.log("Error occurred:", error)
+          });
           console.log(txtData);
           
         })
 
+// document.getElementById("continue").onclick = function () {
+//           var textEntered = "";
+//           textEntered = document.getElementById("rough").value;
+//           sendPostRequest("/videoData", textEntered);
+//            console.log(textEntered);
+//          }
